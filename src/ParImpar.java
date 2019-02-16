@@ -1,11 +1,6 @@
-import java.text.DecimalFormat;
-import java.text.NumberFormat;
-
 public class ParImpar {
 	
 	private String strNumber;
-	private NumberFormat df = new DecimalFormat("#0.000");
-	
 	
 	public ParImpar(String number) {
 		this.strNumber = number;
