@@ -6,6 +6,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 public class par_imparGUI extends JFrame implements ActionListener{
@@ -18,7 +19,7 @@ public class par_imparGUI extends JFrame implements ActionListener{
 	public par_imparGUI(ParImpar parImpar){
 		
 		
-		setSize(300,200);
+		setSize(350,150);
 		setLayout(null);
 		Container ctn = this.getContentPane();
         ctn.setBackground(new Color(206,206,206));
@@ -32,6 +33,7 @@ public class par_imparGUI extends JFrame implements ActionListener{
 		
 		jbComprobar = new JButton("Comprobar");
 		jbComprobar.setBounds(190,35,100,30);
+		jbComprobar.addActionListener(this);
 		
 		add(jlNumero);
 		add(jtfNumero);
@@ -39,9 +41,16 @@ public class par_imparGUI extends JFrame implements ActionListener{
 	}
 	
 	@Override
-	public void actionPerformed(ActionEvent arg0) {
-		// TODO Auto-generated method stub
+	public void actionPerformed(ActionEvent e) {
+		if(e.getSource()==jbComprobar) {
+			this.parImpar.setNumber(jtfNumero.getText());
+			answer();
+		}
 		
+	}
+	
+	public void answer() {
+		JOptionPane.showMessageDialog(null, this.parImpar.comprobarNumero());
 	}
 
 }

@@ -8,6 +8,7 @@ public class main {
 		ParImpar parImpar = new ParImpar();
 		par_imparGUI parImparGUI = new par_imparGUI(parImpar);
 		parImparGUI.setVisible(true);
+		parImparGUI.setLocationRelativeTo(null);
 	}
 
 }
