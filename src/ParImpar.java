@@ -47,7 +47,7 @@ public class ParImpar {
 			if(Integer.parseInt(number[0])%2 == 0) {
 				respuesta += "La parte entera "+number[0]+" es PAR\n";
 			}else {
-				respuesta += "La parte entera "+number[0]+" es IMPAR\\n";
+				respuesta += "La parte entera "+number[0]+" es IMPAR\n";
 			}
 			if(Integer.parseInt(number[1])%2 == 0) {
 				respuesta += "La parte decimal "+number[1]+" es PAR";

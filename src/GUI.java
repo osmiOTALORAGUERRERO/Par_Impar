@@ -19,7 +19,7 @@ public class GUI extends JFrame implements ActionListener{
 	public GUI(ParImpar parImpar)
 	{
 		setSize(400, 120);
-		setTitle("Calcualdora");
+		setTitle("¿Par o Impar?");
 		setLocationRelativeTo(null);
 		setLayout(null);
 		Container ctn = this.getContentPane();
