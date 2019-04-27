@@ -1,0 +1,14 @@
+body {
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 5%;
+  border-top: 4mm ridge rgb(170, 50, 220, .6);
+}
+
+.body {
+  align-items: center;
+  text-align: center;
+}
